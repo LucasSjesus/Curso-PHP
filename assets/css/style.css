@@ -10,9 +10,9 @@ body{
     grid-template-rows: 120px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas:
-              "cabecalho "
-              "principal "
-              "rodape ";
+              "cabecalho"
+              "principal"
+              "rodape";
 }
 
 .cabecalho{
@@ -42,13 +42,13 @@ body{
 
 .principal{
     grid-area: principal;
-    height: calc(100vh - 180);
+    height: calc(100vh - 180px);
     background-color: #f0f0f0;
     padding: 20px;
 }
 
-.conteudo{
-    position: relative;
+.principal .conteudo{
+    
     height: 100%;
     overflow-y: scroll;
     background-color: #fff;
@@ -63,5 +63,12 @@ body{
     justify-content: flex-end;
     align-items: center;
     font-size: 1.2rem;padding: 20px;
+    padding-right: 20px;
     color: #444;
+}
+
+
+.modulos {
+    display: flex;
+    
 }
